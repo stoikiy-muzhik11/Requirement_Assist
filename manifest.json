@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Polarion Change Minimap",
+  "version": "1.7",
+  "description": "Marks changes from Polarion's compare view as ticks along the scrollbar.",
+  "content_scripts": [
+    {
+      "matches": ["https://polarion.mrs-electronic.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
